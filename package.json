@@ -14,8 +14,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
