@@ -17,6 +17,15 @@
     "lint": "biome lint --write ./src",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "biome format --write",
+      "biome lint --write"
+    ],
+    "*.css": [
+      "biome format --write"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
