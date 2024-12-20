@@ -8,8 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
+    "analyze": "npx knip",
     "preview": "vite preview",
-    "knip": "knip"
+    "knip": "knip",
+    "format-check" : "biome format ./src",
+    "format" : "biome format --write ./src",
+    "lint-check" : "biome lint ./src",
+    "lint" : "biome lint --write ./src"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +27,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@types/node": "^22.10.2",
     "@vitejs/plugin-react": "^4.3.4",
     "knip": "^5.41.1",
