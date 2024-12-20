@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["node_modules" , "dist"]
+    "ignore": ["node_modules", "dist"]
   },
   "formatter": {
     "enabled": true,
@@ -16,18 +16,16 @@
     "indentWidth": 2,
     "lineWidth": 80,
     "lineEnding": "lf",
-    "ignore": [
-      "node_modules",
-      "dist",
-      "public"
-    ]
+    "ignore": ["node_modules", "dist", "public"]
   },
   "organizeImports": {
     "enabled": true
   },
   "linter": {
     "enabled": true,
+
     "rules": {
+      "style": { "noNonNullAssertion": "off" },
       "recommended": true
     },
     "ignore": ["node_modules", "dist", "public"]
