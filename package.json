@@ -17,13 +17,17 @@
     "lint": "biome lint --write ./src",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "biome format --write",
-      "biome lint --write"
+   "lint-staged": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+      "biome check --files-ignore-unknown=true",
+      "biome check --write --no-errors-on-unmatched", 
+      "biome check --write --organize-imports-enabled=false --no-errors-on-unmatched",
+      "biome check --write --unsafe --no-errors-on-unmatched",
+      "biome format --write --no-errors-on-unmatched", 
+      "biome lint --write --no-errors-on-unmatched"
     ],
-    "*.css": [
-      "biome format --write"
+    "*": [
+      "biome check --no-errors-on-unmatched --files-ignore-unknown=true"
     ]
   },
   "keywords": [],
@@ -50,6 +54,7 @@
     "globals": "^15.14.0",
     "husky": "^9.1.7",
     "knip": "^5.41.1",
+    "semantic-release": "^24.2.0",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.1",
     "vite": "^6.0.3"
