@@ -1,8 +1,7 @@
 {
   "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-    "biome check --files-ignore-unknown=true",
     "biome format --write",
     "biome lint --no-errors-on-unmatched"
   ],
-  "*": ["biome check --files-ignore-unknown=true --no-errors-on-unmatched"]
+  "*": ["biome check --no-errors-on-unmatched --files-ignore-unknown=true"]
 }
