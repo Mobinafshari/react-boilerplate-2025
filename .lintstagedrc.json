@@ -3,5 +3,9 @@
     "biome format --write",
     "biome lint --no-errors-on-unmatched"
   ],
-  "*": ["biome check --no-errors-on-unmatched --files-ignore-unknown=true"]
+  "*": [
+    "biome check --no-errors-on-unmatched --files-ignore-unknown=true",
+    "!dist/**",
+    "!mod.js"
+  ]
 }
