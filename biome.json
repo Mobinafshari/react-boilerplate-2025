@@ -6,8 +6,8 @@
     "useIgnoreFile": false
   },
   "files": {
-    "ignoreUnknown": false,
-    "ignore": ["node_modules", "dist"]
+    "ignoreUnknown": true,
+    "ignore": ["node_modules", "dist", "public"]
   },
   "formatter": {
     "enabled": true,
@@ -23,7 +23,6 @@
   },
   "linter": {
     "enabled": true,
-
     "rules": {
       "style": { "noNonNullAssertion": "off" },
       "recommended": true
