@@ -11,10 +11,8 @@
     "analyze": "npx knip",
     "preview": "vite preview",
     "knip": "knip",
-    "format-check": "biome format ./src",
-    "format": "biome format --write ./src",
-    "lint-check": "biome lint ./src",
-    "lint": "biome lint --write ./src",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint . --fix",
     "prepare": "husky"
   },
   "keywords": [],
@@ -37,7 +35,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.6.0",
-    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react": "^7.37.3",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
     "jsdom": "^25.0.1",
@@ -45,8 +43,9 @@
     "lint-staged": "^15.2.11",
     "semantic-release": "^24.2.0",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.1",
+    "typescript-eslint": "^8.18.2",
     "vite": "^6.0.3",
+    "vite-plugin-eslint": "^1.8.1",
     "vitest": "^2.1.8"
   }
 }

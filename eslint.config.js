@@ -1,7 +1,12 @@
-import config from "eslint-config-standard";
+import js from "@eslint/js";
 
-
-/** @type {import('eslint').Linter.Config[]} */
 export default [
-  ...[].concat(config),
+  js.configs.recommended,
+
+  {
+    rules: {
+      "no-unused-vars": "warn",
+      "no-undef": "warn",
+    },
+  },
 ];
