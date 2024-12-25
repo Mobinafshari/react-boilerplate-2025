@@ -11,8 +11,8 @@
     "analyze": "npx knip",
     "preview": "vite preview",
     "knip": "knip",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "prepare": "husky"
   },
   "keywords": [],
@@ -30,6 +30,7 @@
     "@eslint/js": "^9.17.0",
     "@types/node": "^22.10.2",
     "@vitejs/plugin-react": "^4.3.4",
+    "cypress": "^13.17.0",
     "eslint": "^8.57.1",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.31.0",
@@ -41,11 +42,11 @@
     "jsdom": "^25.0.1",
     "knip": "^5.41.1",
     "lint-staged": "^15.2.11",
+    "prettier": "3.4.2",
     "semantic-release": "^24.2.0",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.3",
-    "vite-plugin-eslint": "^1.8.1",
     "vitest": "^2.1.8"
   }
 }

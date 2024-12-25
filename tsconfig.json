@@ -12,6 +12,6 @@
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src" , "./test/setupTest.ts"],
+  "include": ["src", "./test/setupTest.ts"],
   "exclude": ["node_modules", "dist"]
 }
