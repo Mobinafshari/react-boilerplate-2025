@@ -1,7 +1,6 @@
-import React from "react";
+import React from 'react';
 
 function Test() {
-  let name;
   return <div>Test </div>;
 }
 
