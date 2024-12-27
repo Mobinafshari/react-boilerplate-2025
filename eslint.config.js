@@ -7,6 +7,10 @@ import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   {
+    ignores : ["dist" , "node_modules" , "public"],
+  },
+  {
+      files: ['src/**/*.{js,mjs,cjs,ts,jsx,tsx}'],
     languageOptions: {
       globals: { ...globals.browser, ...globals.node },
     },
@@ -14,14 +18,20 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
-  eslintPluginPrettierRecommended, // Adds Prettier recommended configuration
+  eslintPluginPrettierRecommended,
   {
-    files : ['src/**/*.{ts , tsx}'],
-    ignores: ["node_modules"],
+    settings : {
+      react : {
+        version : "detect"
+      }
+    }
+  },
+  {
     rules: {
       'no-unused-vars': 'error',
       'no-undef': 'error',
       'prefer-const': 'error',
+      'react/react-in-jsx-scope': 'off'
     },
   },
 ];
