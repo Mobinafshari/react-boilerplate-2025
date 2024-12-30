@@ -32,8 +32,8 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
     "@eslint/js": "^9.17.0",
+    "@testing-library/jest-dom": "^6.6.3",
     "@types/node": "^22.10.2",
     "@vitejs/plugin-react": "^4.3.4",
     "cypress": "^13.17.0",
@@ -47,7 +47,6 @@
     "knip": "^5.41.1",
     "lint-staged": "^15.2.11",
     "prettier": "3.4.2",
-    "semantic-release": "^24.2.0",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.3",
